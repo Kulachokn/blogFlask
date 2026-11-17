@@ -1,0 +1,58 @@
+[
+    {
+        "id": "3",
+        "author": "Alex Mercer",
+        "title": "Getting Started with React Hooks",
+        "content": "Hooks let you use state and other React features without writing a class. Let's explore useState and useEffect with simple examples.",
+        "likes": 42
+    },
+    {
+        "id": "4",
+        "author": "Olena Kovalenko",
+        "title": "5 Tips for Better Remote Work",
+        "content": "Working from home requires discipline. Setting clear boundaries, taking regular breaks, and having a dedicated workspace can boost your focus.",
+        "likes": 29
+    },
+    {
+        "id": "5",
+        "author": "Marcus Vance",
+        "title": "Why Clean Code Matters",
+        "content": "Code is read much more often than it is written. Meaningful variable names and small functions save hours of debugging later.",
+        "likes": 64
+    },
+    {
+        "id": "6",
+        "author": "Sarah Jenkins",
+        "title": "A Weekend Trip to the Mountains",
+        "content": "Nothing beats fresh mountain air after a busy week in the city. Here are my favorite hiking trails for beginners.",
+        "likes": 19
+    },
+    {
+        "id": "7",
+        "author": "David Chen",
+        "title": "Understanding REST APIs",
+        "content": "RESTful APIs use standard HTTP methods like GET, POST, PUT, and DELETE to communicate between the client and the server.",
+        "likes": 53
+    },
+    {
+        "id": "8",
+        "author": "Clara Lindqvist",
+        "title": "How to Brew the Perfect Pour-Over Coffee",
+        "content": "Water temperature, grind size, and pouring speed all affect the taste of your morning cup. Follow this step-by-step ratio guide.",
+        "likes": 37
+    },
+    {
+        "id": "9",
+        "author": "Taras Melnyk",
+        "title": "CSS Grid vs Flexbox: When to Use Which",
+        "content": "Flexbox is designed for one-dimensional layouts, while CSS Grid excels at two-dimensional page structures. Combining both gives you full control.",
+        "likes": 81
+    },
+    {
+        "id": "10",
+        "author": "Emily White",
+        "title": "Books That Changed My Perspective",
+        "content": "From sci-fi classics to modern psychology, reading widens our horizons. Here is my top five list from this year.",
+        "likes": 12
+    }
+]

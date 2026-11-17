@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1>My Flask Blog</h1>
+        <a class="btn btn-primary" href="{{ url_for('add_post') }}">+ New Post</a>
+    </header>
+
+    <ul class="posts">
+        {% for post in posts %}
+        <li class="post">
+            <h2>{{ post.title }}</h2>
+            <p class="author">Written by {{ post.author }}</p>
+            <p class="content">{{ post.content }}</p>
+
+            <div class="post-actions">
+                <form action="{{ url_for('like_post', id=post.id) }}" method="POST">
+                    <button type="submit" class="btn">♥ Like · {{ post.likes or 0 }}</button>
+                </form>
+
+                <span class="spacer"></span>
+
+                <a class="btn" href="{{ url_for('update_post', id=post.id) }}">Edit</a>
+
+                <form action="{{ url_for('delete_post', id=post.id) }}" method="POST"
+                      onsubmit="return confirm('Delete this post?');">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </li>
+        {% else %}
+        <li class="empty">No posts yet. Be the first to write one!</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
